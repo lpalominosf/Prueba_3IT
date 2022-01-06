@@ -1,0 +1,15 @@
+<h1 class="center">{{ detalleIndicador.nombre }}</h1>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Fecha</th>
+        <th scope="col">Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let serie of detalleIndicador.serie">
+        <th scope="row">{{ serie.fecha | date: "dd-MM-yyyy" }}</th>
+        <td>{{ serie.valor }}</td>
+      </tr>
+    </tbody>
+  </table>

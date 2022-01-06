@@ -1,0 +1,34 @@
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h4 class="text-white">Contenido</h4>
+        <span class="text-muted">Menú</span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="../assets/img/Logo-Banco.jpg" width="30" height="30" class="navbar__logo d-inline-block align-top" alt="">        
+      </a>
+    </nav>
+  </div>
+  <div class="container w-75 p-3">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <button (click)="openDialog( informacionMonedas.uf.codigo )" type="button" class="btn btn-secondary">{{ informacionMonedas.uf.nombre }}</button>
+        <button (click)="openDialogDetalle( informacionMonedas.uf )" type="button" class="btn btn-secondary"><mat-icon>home</mat-icon></button>
+      </li>
+      <li (click)="openDialog( informacionMonedas.ivp.codigo )" class="list-group-item">{{ informacionMonedas.ivp.nombre }}</li>
+      <li (click)="openDialog( informacionMonedas.dolar.codigo )" class="list-group-item">{{ informacionMonedas.dolar.nombre }}</li>
+      <li (click)="openDialog( informacionMonedas.dolar_intercambio.codigo )" class="list-group-item">{{ informacionMonedas.dolar_intercambio.nombre }}</li>
+      <li (click)="openDialog( informacionMonedas.euro.codigo )" class="list-group-item">{{ informacionMonedas.euro.nombre }}</li>
+      <li (click)="openDialog( informacionMonedas.imacec.codigo )" class="list-group-item">{{ informacionMonedas.imacec.nombre }}</li>
+      <li (click)="openDialog( informacionMonedas.tpm.codigo )" class="list-group-item">{{ informacionMonedas.tpm.nombre }}</li>
+      <li (click)="openDialog( informacionMonedas.libra_cobre.codigo )" class="list-group-item">{{ informacionMonedas.libra_cobre.nombre }}</li>
+      <li (click)="openDialog( informacionMonedas.tasa_desempleo.codigo )" class="list-group-item">{{ informacionMonedas.tasa_desempleo.nombre }}</li>
+      <li (click)="openDialog( informacionMonedas.bitcoin.codigo )" class="list-group-item">{{ informacionMonedas.bitcoin.nombre }}</li>
+    </ul>
+</div>
