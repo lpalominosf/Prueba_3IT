@@ -5,7 +5,7 @@ Versión de NodeJS 10.13.0
 Versión de Bootstrap 4.0.0
 Versión de Angular Material 11.2.13
 
-## Levantar Aplicacipon
+## Levantar Aplicación
 
 Para levantar la aplicación use el comando `ng serve` y en el navegador ir a la dirección `http://localhost:4200/`. 
 
