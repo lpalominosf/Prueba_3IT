@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   titulo:string="Prueba";
   informacionMonedas!: ResponseIndicadores;
   detalleIndicador!: DetalleIndicador;
+  loading:boolean=true;
   constructor (
     private indicadoresService:IndicadoresService, public dialog: MatDialog
   ) {}
@@ -39,7 +40,7 @@ export class AppComponent implements OnInit {
       });
   
       dialogRef.afterClosed().subscribe(result => {
-        console.log('The dialog was closed');
+        console.log('El modal fue cerrado');
   
     })      
   }
@@ -47,6 +48,7 @@ export class AppComponent implements OnInit {
     this.indicadoresService.getTodos().subscribe((data:ResponseIndicadores) => {
       this.informacionMonedas=data
       console.log("Valor de ",this.informacionMonedas)
+      this.loading=false
       console.log(data)})
 
   } // Se ejecuta cuando comienza la página web

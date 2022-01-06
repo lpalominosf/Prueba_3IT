@@ -1,5 +1,8 @@
-<h1>{{ tipoIndicador.nombre }}</h1>
-<p>{{ tipoIndicador.valor }}</p>
-<p>{{ tipoIndicador.nombre }}</p>
-<p>{{ tipoIndicador.fecha | date: "dd-MM-yyyy" }}</p>
-<p>{{ tipoIndicador.unidad_medida }}</p>
+<h3 mat-dialog-title>{{ tipoIndicador.nombre }}</h3>
+<p>Valor: {{ tipoIndicador.valor }}</p>
+<p>Nombre: {{ tipoIndicador.nombre }}</p>
+<p>Fecha: {{ tipoIndicador.fecha | date: "dd-MM-yyyy" }}</p>
+<p>Unidad de Medida: {{ tipoIndicador.unidad_medida }}</p>
+<div mat-dialog-actions>
+    <button type="button" class="btn btn-primary" mat-button cdkFocusInitial (click) ="cerrarModal()">Cerrar</button>
+</div>

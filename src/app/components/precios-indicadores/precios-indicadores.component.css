@@ -2,6 +2,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-    font-size: 28px;
+h3 {
+    font-size: 18px;
+}
+
+.dialog__table {
+    background-color: #011C4D;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+tbody {
+    font-size: 14px; 
 }

@@ -1,8 +1,43 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .navbar__logo {
-  width: 150px;
+  width: 110px;
+}
+
+.list__button {
+  align-self: right;
+}
+
+.lista__hover:hover {
+  cursor: pointer;
+  background-color: #F4F8FF;
+}
+
+.navbar__background {
+  background-color: #011C4D;
+}
+
+.navbar-toggler-icon {
+  color: #F4F8FF;
+}
+
+.text-white, .text-muted:hover {
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: #011C4D;
+  font-size: 14px;
+  margin: 1%;
+}
+
+.btn-secondary:hover {
+  background-color: #5f97f7;
+}
+
+.button_list {
+  height: 45px;
 }
