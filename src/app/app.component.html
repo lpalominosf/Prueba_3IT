@@ -13,67 +13,87 @@
       </a>
     </nav>
     </div>
-    <div class="container w-75 p-3">
+    <div class="container w-100 p-3">
     <ul class="list-group">
       <li class="lista__hover list-group-item">
-        <button (click)="openDialog( informacionMonedas.uf.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.uf.nombre }}</button>
-        <button (click)="openDialogDetalle( informacionMonedas.uf )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
-          <mat-icon>info</mat-icon>
-        </button>
+        <div class="col-xs">
+          <button (click)="openDialog( informacionMonedas.uf.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.uf.nombre }}</button>
+          <button (click)="openDialogDetalle( informacionMonedas.uf )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
+            <mat-icon>info</mat-icon>
+          </button>
+        </div>
       </li>
       <li class="lista__hover list-group-item">
-        <button (click)="openDialog( informacionMonedas.ivp.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.ivp.nombre }}</button>
-        <button (click)="openDialogDetalle( informacionMonedas.ivp )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
-          <mat-icon>info</mat-icon>
-        </button>
+        <div class="col-">
+          <button (click)="openDialog( informacionMonedas.ivp.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.ivp.nombre }}</button>
+          <button (click)="openDialogDetalle( informacionMonedas.ivp )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
+            <mat-icon>info</mat-icon>
+          </button>
+        </div>
       </li>
       <li class="lista__hover list-group-item">
-        <button (click)="openDialog( informacionMonedas.dolar.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.dolar.nombre }}</button>
-        <button (click)="openDialogDetalle( informacionMonedas.dolar )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
-          <mat-icon>info</mat-icon>
-        </button>
+        <div class="col-">
+          <button (click)="openDialog( informacionMonedas.dolar.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.dolar.nombre }}</button>
+          <button (click)="openDialogDetalle( informacionMonedas.dolar )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
+            <mat-icon>info</mat-icon>
+          </button>
+        </div>
       </li>
       <li class="lista__hover list-group-item">
-        <button (click)="openDialog( informacionMonedas.dolar_intercambio.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.dolar_intercambio.nombre }}</button>
-        <button (click)="openDialogDetalle( informacionMonedas.dolar_intercambio )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
-          <mat-icon>info</mat-icon>
-        </button>
+        <div class="col-">
+          <button (click)="openDialog( informacionMonedas.dolar_intercambio.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.dolar_intercambio.nombre }}</button>
+          <button (click)="openDialogDetalle( informacionMonedas.dolar_intercambio )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
+            <mat-icon>info</mat-icon>
+          </button>
+        </div>
       </li>
       <li class="lista__hover list-group-item">
-        <button (click)="openDialog( informacionMonedas.euro.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.euro.nombre }}</button>
-        <button (click)="openDialogDetalle( informacionMonedas.euro )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
-          <mat-icon>info</mat-icon>
-        </button>
+        <div class="col-">
+          <button (click)="openDialog( informacionMonedas.euro.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.euro.nombre }}</button>
+          <button (click)="openDialogDetalle( informacionMonedas.euro )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
+            <mat-icon>info</mat-icon>
+          </button>
+        </div>
       </li>
       <li class="lista__hover list-group-item">
-        <button (click)="openDialog( informacionMonedas.imacec.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.imacec.nombre }}</button>
-        <button (click)="openDialogDetalle( informacionMonedas.imacec )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
-          <mat-icon>info</mat-icon>
-        </button>
+        <div class="col-">
+          <button (click)="openDialog( informacionMonedas.imacec.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.imacec.nombre }}</button>
+          <button (click)="openDialogDetalle( informacionMonedas.imacec )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
+            <mat-icon>info</mat-icon>
+          </button>
+        </div>
       </li>
       <li class="lista__hover list-group-item">
-        <button (click)="openDialog( informacionMonedas.tpm.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.tpm.nombre }}</button>
-        <button (click)="openDialogDetalle( informacionMonedas.tpm )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
-          <mat-icon>info</mat-icon>
-        </button>
+        <div class="col-">
+          <button (click)="openDialog( informacionMonedas.tpm.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.tpm.nombre }}</button>
+          <button (click)="openDialogDetalle( informacionMonedas.tpm )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
+            <mat-icon>info</mat-icon>
+          </button>
+        </div>
       </li>
       <li class="lista__hover list-group-item">
-        <button (click)="openDialog( informacionMonedas.libra_cobre.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.libra_cobre.nombre }}</button>
-        <button (click)="openDialogDetalle( informacionMonedas.libra_cobre )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
-          <mat-icon>info</mat-icon>
-        </button>
+        <div class="col-">
+          <button (click)="openDialog( informacionMonedas.libra_cobre.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.libra_cobre.nombre }}</button>
+          <button (click)="openDialogDetalle( informacionMonedas.libra_cobre )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
+            <mat-icon>info</mat-icon>
+          </button>
+        </div>
       </li>
       <li class="lista__hover list-group-item">
-        <button (click)="openDialog( informacionMonedas.tasa_desempleo.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.tasa_desempleo.nombre }}</button>
-        <button (click)="openDialogDetalle( informacionMonedas.tasa_desempleo )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
-          <mat-icon>info</mat-icon>
-        </button>
+        <div class="col-">
+          <button (click)="openDialog( informacionMonedas.tasa_desempleo.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.tasa_desempleo.nombre }}</button>
+          <button (click)="openDialogDetalle( informacionMonedas.tasa_desempleo )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
+            <mat-icon>info</mat-icon>
+          </button>
+        </div>
       </li>
       <li class="lista__hover list-group-item">
-        <button (click)="openDialog( informacionMonedas.bitcoin.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.bitcoin.nombre }}</button>
-        <button (click)="openDialogDetalle( informacionMonedas.bitcoin )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
-          <mat-icon>info</mat-icon>
-        </button>
+        <div class="col-">
+          <button (click)="openDialog( informacionMonedas.bitcoin.codigo )" type="button" class="button_list btn btn-secondary">{{ informacionMonedas.bitcoin.nombre }}</button>
+          <button (click)="openDialogDetalle( informacionMonedas.bitcoin )" type="button" class="btn btn-secondary float-right" data-toggle="tooltip" data-placement="right" title="Ver información">
+            <mat-icon>info</mat-icon>
+          </button>
+        </div>
       </li>
     </ul>
   </div>
